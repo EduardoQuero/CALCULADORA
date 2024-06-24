@@ -1,0 +1,153 @@
+/* Fonte Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.alavancagem-slider {
+  margin-bottom: 20px;
+}
+
+.alavancagem-slider label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.alavancagem-slider input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+}
+
+.alavancagem-slider input[type="range"]:hover {
+  opacity: 1;
+}
+
+.alavancagem-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.alavancagem-slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.operacao-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button.comprar {
+  background-color: #4CAF50;
+  color: white;
+  margin-right: 10px;
+}
+
+button.vender {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.active {
+  border: 2px solid #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+}
+
+p {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.destacado {
+  font-weight: 700;
+}
+
+#alavancagemValor {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.resultados {
+  margin-top: 20px;
+}
+
+#lucroUsd, #lucroBrl {
+  font-weight: 700;
+}

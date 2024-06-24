@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Lucro com Dólar Atualizado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Lucro com Dólar Atualizado</h2>
+    <div class="alavancagem-slider">
+      <label for="alavancagem">Escolha a Alavancagem: <span id="alavancagemValor">1x</span></label>
+      <input type="range" id="alavancagem" min="1" max="100" value="1" step="1">
+    </div>
+    <div class="operacao-buttons">
+      <button id="comprarBtn" class="comprar">Comprar</button>
+      <button id="venderBtn" class="vender">Vender</button>
+    </div>
+    <div>
+      <label for="preco1">Valor 1:</label>
+      <input type="number" id="preco1" step="0.01" placeholder="Ex: 1340">
+    </div>
+    <div>
+      <label for="preco2">Valor 2:</label>
+      <input type="number" id="preco2" step="0.01" placeholder="Ex: 1527">
+    </div>
+    <div>
+      <label for="quantidadeInvestida">Valor Investido (USD):</label>
+      <input type="number" id="quantidadeInvestida" step="0.01" placeholder="Ex: 10">
+    </div>
+    <div>
+      <p>Cotação do Dólar Atual: <span id="cotacaoAtual" class="destacado"></span></p>
+    </div>
+    <div>
+      <p>Lucro em USD: <span id="lucroUsd"></span></p>
+      <p>Lucro em BRL (aproximado): <span id="lucroBrl"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
